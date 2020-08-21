@@ -142,9 +142,12 @@ public class Drawview extends View {
         }
         if (event.getAction() == MotionEvent.ACTION_MOVE) {
             path.lineTo(pointX,pointY);
+            this.invalidate();
         }
 
 
-        invalidate();
+
+
+
     }
 }

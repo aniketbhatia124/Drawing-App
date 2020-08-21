@@ -25,8 +25,7 @@ public class Fragmentclass1 extends Fragment {
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.drawfragment,null);
-        drawview= new Drawview(view.getContext());
+        drawview= new Drawview(getContext());
 
 
 //        drawview.setOnClickListener(new View.OnClickListener() {
@@ -37,7 +36,7 @@ public class Fragmentclass1 extends Fragment {
 //        });
 
 
-        return view;
+        return drawview;
     }
 //
 //    @Override
